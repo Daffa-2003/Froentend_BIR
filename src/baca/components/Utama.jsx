@@ -26,7 +26,7 @@ export const Utama = () => {
             <div key={book.bookid} className="card w-80 bg-base-100 shadow-xl m-2">
               <div className="flex flex-wrap justify-center space-x-4">
                 <div className="card w-80 bg-base-100 shadow-xl m-2">
-                  <figure cl>
+                  <figure>
                     <img src={`http://localhost:8080/uploads/${book.image}`} alt="" />
                   </figure>
                   <div className="card-body">
