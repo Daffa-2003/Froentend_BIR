@@ -1,9 +1,10 @@
 import React from "react";
 
-import Daffa from '../assets/anggota/dafa].png'
-import Angga from '../assets/anggota/angga2.png'
-import Damar from '../assets/anggota/damar3.png'
-import Nana from '../assets/anggota/nana2.png'
+import Daffa from "../assets/anggota/dafa].png";
+import Angga from "../assets/anggota/angga2.png";
+import Damar from "../assets/anggota/damar3.png";
+import Nana from "../assets/anggota/nana2.png";
+import ocid from "../assets/anggota/ocid.png";
 
 export const P3 = () => {
   return (
@@ -149,7 +150,7 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <img src={Daffa} className='w-50 h-52 z-50 -mt-20' alt=""/>
+                <img src={ocid} className="w-50 h-52 z-50 -mt-20" alt="" />
               </div>
             </div>
 
