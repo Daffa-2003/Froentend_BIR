@@ -150,7 +150,9 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <img src={ocid} className="w-50 h-52 z-50 -mt-20" alt="" />
+                <div className="w-30 h-32 z-50">
+                  <img src={ocid} className="w-25 h-28  ml-9 mt-4" alt="" />
+                </div>
               </div>
             </div>
 
