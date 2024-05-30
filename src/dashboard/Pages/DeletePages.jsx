@@ -42,10 +42,10 @@ export const DeletePages = () => {
   };
 
   return (
-    <div className="flex flex-col w-full h-screen overflow-hidden">
+    <div className="flex flex-col w-full h-full overflow-hidden">
       <Navbar />
 
-      <div className="w-4/5 border-2 border-indigo-600 self-center rounded-3xl md:justify-center my-14 shadow-2xl h-full p-8 overflow-auto">
+      <div className="bg-neutral-100 w-4/5 border-2 border-neutral-400 self-center rounded-3xl md:justify-center my-14 shadow-2xl h-full p-8 overflow-auto">
         <table className="">
           <thead>
             <tr className="">
@@ -66,10 +66,10 @@ export const DeletePages = () => {
                   {page.storytext}
                 </td>
                 <td className="flex items-start space-x-2 p-2">
-                  <Link to={`/editPages/${page.pageid}`} className="hover:bg-indigo-600 hover:text-white-A700 rounded-lg border-2 border-indigo-600 p-2">
+                  <Link to={`/editPages/${page.pageid}`} className="font-bold hover hover:border-neutral-600  hover:bg-neutral-600 hover:text-white-A700 rounded-lg p-2">
                     edit
                   </Link>
-                  <button onClick={() => deletePage(page.pageid)} className="hover:bg-indigo-600 hover:text-white-A700 rounded-lg border-2 border-indigo-600 p-2">
+                  <button onClick={() => deletePage(page.pageid)} className="font-bold hover hover:border-neutral-600 hover:bg-neutral-600 hover:text-white-A700  rounded-lg p-2">
                     delete
                   </button>
                 </td>
