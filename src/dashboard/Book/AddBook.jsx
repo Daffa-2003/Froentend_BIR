@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Navbar } from "../navbar/Navbar";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useDispatch, useSelector } from "react-redux";

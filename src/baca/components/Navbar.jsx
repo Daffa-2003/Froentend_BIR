@@ -1,35 +1,34 @@
-import React from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import SearchIcon from "@mui/icons-material/Search";
-import { useLocation } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export const Navbar = () => {
-  const location = useLocation();
-  const showSearch = location.pathname === "/baca";
   return (
     <Disclosure as="nav" className="fixed w-full z-10 bg-hijauCustom">
       {({ open }) => (
         <>
           <div className="  w-full  mt-4 mb-2">
             <div className="hidden sm:block sm:ml-6  justify-end">
-              <div className=" flex my-1.5 justify-between">
+              <div className=" flex justify-between ">
                 <a href="/" className="text-3xl font-bold text-white-A700 font-abc tracking-wide" style={{ textShadow: "0px 0px 5px rgb(215, 245, 220)" }}>
                   B.I.R
                 </a>
-                {showSearch && (
-                  <div className="input-wrapper border-2 border-hijau p-2 rounded-lg">
-                    <SearchIcon className="text-4xl" style={{ color: "white" }} />
-                    <input placeholder="Type to search..."  className="text-white outline-none bg-transparent" style={{ border: "none", color: "white" }} />
-                  </div>
-                )}
-
-                <a href="/login" className={classNames("text-white-A700 border-2 rounded-lg border-hijau py-2 px-6 font-bold mr-4", "hover:bg-hijau hover:text-slate-950 transition duration-300")}>
+                <div className=" flex">
+                  <a href="/baca" className="text-white-A700 rounded-md px-3 py-2 text-lg font-stylish font-bold transition duration-300 hover:bg-hijauCustom hover:text-hijau ">
+                    Baca
+                  </a>
+                  <a href="/about" className="text-white-A700 rounded-md px-3 py-2 text-lg transition duration-300 font-bold hover:bg-hijauCustom hover:text-hijau font-stylish">
+                    About BIR
+                  </a>
+                  <a href="/anggota" className="text-white-A700 rounded-md px-3 py-2 text-lg font-stylish font-bold transition duration-300 hover:bg-hijauCustom hover:text-hijau ">
+                    BIR Human
+                  </a>
+                </div>
+                <a href="/login" className={classNames("text-white-A700 border-2 rounded-lg border-hijau py-3 px-4 font-bold mr-4", "hover:bg-hijau hover:text-slate-950 transition duration-300")}>
                   Login
                 </a>
               </div>

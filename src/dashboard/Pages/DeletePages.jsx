@@ -45,25 +45,25 @@ export const DeletePages = () => {
       <table className="table border border-neutral-400 border-collapse w-full ">
         <thead className="bg-green-950  border-b-2 border-neutral-400">
           <tr className="">
-            <th className="border-r font-abc border-neutral-400 p-4 text-custom text-lg">No</th>
-            <th className="border-r font-abc border-neutral-400 p-4 text-custom text-lg">pageID</th>
-            <th className="border-r font-abc border-neutral-400 p-4 text-custom text-lg">relatedBookId</th>
-            <th className="border-r font-abc border-neutral-400 p-4 text-custom text-lg">storytext</th>
-            <th className=" border-r font-abc border-neutral-400 p-4 text-custom text-lg">Actions</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">No</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">pageID</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">relatedBookId</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">storytext</th>
+            <th className=" border-r title border-neutral-400 p-4 text-custom text-lg">Actions</th>
           </tr>
         </thead>
         <tbody className="">
           {pages.map((page, index) => (
             <tr key={page.pageid} className="mb-16 border-b border-neutral-400">
-              <td className="border-r border-neutral-400 p-4 break-words text-wrap text-justify font-ubuntu">{index + 1}</td>
-              <td className="border-r border-neutral-400 p-4 break-words text-wrap text-justify font-ubuntu">{page.pageid}</td>
-              <td className="border-r border-neutral-400 p-4 break-words text-wrap text-justify font-ubuntu">{page.relatedBookId}</td>
-              <td className="border-r border-neutral-400 p-4 break-words text-wrap text-justify align-top font-ubuntu">{page.storytext}</td>
+              <td className="border-r text-green-950 border-neutral-400 p-4 break-words text-wrap text-justify font-ubuntu">{index + 1}</td>
+              <td className="border-r text-green-950 border-neutral-400 p-4 break-words text-wrap text-justify font-ubuntu">{page.pageid}</td>
+              <td className="border-r text-green-950 border-neutral-400 p-4 break-words text-wrap text-justify font-ubuntu">{page.relatedBookId}</td>
+              <td className="border-r text-green-950 border-neutral-400 p-4 break-words text-wrap text-justify align-top font-ubuntu">{page.storytext}</td>
               <td className="flex items-start space-x-2 p-4">
-                <Link to={`/editPages/${page.pageid}`} className="font-ubuntu border-2 border-neutral-400 text-center h-8 font-bold hover:border-neutral-700 hover:text-white-A700 hover:bg-neutral-700 rounded-lg p-2">
+                <Link to={`/editPages/${page.pageid}`} className="font-ubuntu border-2 text-green-950 border-neutral-400 text-center h-8 font-bold hover:border-neutral-700 hover:text-white-A700 hover:bg-neutral-700 rounded-lg p-2">
                   edit
                 </Link>
-                <button onClick={() => deletePage(page.pageid)} className="font-ubuntu border-2 border-neutral-400 text-center h-8 font-bold hover:border-neutral-700 hover:text-white-A700 hover:bg-neutral-700 rounded-lg p-2">
+                <button onClick={() => deletePage(page.pageid)} className="font-ubuntu border-2 text-green-950 border-neutral-400 text-center h-8 font-bold hover:border-neutral-700 hover:text-white-A700 hover:bg-neutral-700 rounded-lg p-2">
                   delete
                 </button>
               </td>

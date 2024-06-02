@@ -1,8 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
+import SearchIcon from "@mui/icons-material/Search";
 
 import axios from "axios";
 import { Link } from "react-router-dom";
+// eslint-disable-next-line react-refresh/only-export-components
 
 export const Utama = () => {
   const [book, setBook] = useState([]);
@@ -18,10 +20,29 @@ export const Utama = () => {
   useEffect(() => {
     getBook();
   }, []);
+  const search = async (value) => {
+    try {
+      const response = await axios.get(`http://localhost:8080/books/search?query=${value}`);
+      if (response.data === null) {
+        setBook([]);
+      } else {
+        setBook(response.data);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <div className=" h-full py-20 px-7 flex flex-row bg-hijau">
-      <div className="w-full h-full  p-4 bg-hijau ">
+      <div className="w-full h-full  p-4 bg-hijau align-middle flex justify-center flex-col">
+        <div className="input-wrapper  p-2 rounded-lg flex w-full justify-center">
+          <div className="border-2 p-2 rounded-lg border-green-950">
+            <SearchIcon className="text-4xl" style={{ color: "black" }} />
+            <input placeholder="Type to search..." className="text-white outline-none bg-transparent " onChange={(e) => search(e.target.value)} style={{ border: "none", color: "black " }} />
+          </div>
+        </div>
         <div className="flex flex-wrap justify-center gap-8">
+          {book.length === 0 && <h1 className="p-30vh text-white text-2xl">No Book Found</h1>}
           {book.map((book) => (
             <div
               key={book.bookid}
