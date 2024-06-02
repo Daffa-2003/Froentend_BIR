@@ -29,7 +29,7 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <div className="w-30 h-32 z-50">
+                <div className="w-30 h-32 z-10">
                   <img src={Angga} className="w-25 h-28  ml-12 mt-4" alt="" />
                 </div>
               </div>
@@ -60,7 +60,7 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <img src={Daffa} className="w-50 h-52 z-50 -mt-20" alt="" />
+                <img src={Daffa} className="w-50 h-52 z-10 -mt-20" alt="" />
               </div>
             </div>
 
@@ -89,7 +89,7 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <div className="w-30 h-32 z-50">
+                <div className="w-30 h-32 z-10">
                   <img src={Nana} className="w-40 h-36  ml-6 -mt-6" alt="" />
                 </div>
               </div>
@@ -120,7 +120,7 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <div className="w-30 h-32 z-50">
+                <div className="w-30 h-32 z-10">
                   <img src={Damar} className="w-25 h-28  ml-9 mt-4" alt="" />
                 </div>
               </div>
@@ -150,7 +150,7 @@ export const P3 = () => {
                     />
                   </svg>
                 </div>
-                <div className="w-30 h-32 z-50">
+                <div className="w-30 h-32 z-10">
                   <img src={Ocid} className="w-25 h-28  ml-7 mt-2" alt="" />
                 </div>
               </div>

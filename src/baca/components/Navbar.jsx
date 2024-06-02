@@ -8,7 +8,7 @@ function classNames(...classes) {
 
 export const Navbar = () => {
   return (
-    <Disclosure as="nav" className="fixed w-full z-10 bg-hijauCustom">
+    <Disclosure as="nav" className="fixed w-full z-20 bg-hijauCustom">
       {({ open }) => (
         <>
           <div className="  w-full  mt-4 mb-2">
