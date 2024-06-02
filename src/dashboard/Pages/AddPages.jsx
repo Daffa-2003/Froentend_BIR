@@ -61,7 +61,7 @@ export const AddPages = () => {
   };
 
   return (
-    <div className=" flex flex-col bg-hijau h-screen">
+    <div className=" flex flex-col bg-hijau h-full pb-20">
      <div className="bg-hijauCustom h-16">
     <Link to="/dashboard2">
         <ArrowBackIcon style={{ color: 'white',margin: '15px' }} />
@@ -85,7 +85,7 @@ export const AddPages = () => {
     />
 </div>
 
-            {preview && <img src={preview} alt="preview" className="w-20 h-20" />}
+            {preview && <img src={preview} alt="preview" className="w-20 h-full" />}
           </div>
           <div className="grid justify-items-stretch mt-8">
             <button className=" border-2 border-hijauCustom justify-self-center font-bold hover hover:border-hijauCustom hover:text-white-A700 hover:bg-hijauCustom rounded-lg p-2" type="submit">

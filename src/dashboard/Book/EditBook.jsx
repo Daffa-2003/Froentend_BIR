@@ -91,7 +91,7 @@ export const EditBook = () => {
               {/* <label className="text-lg">Music</label>
               <input onChange={loadMusic} type="file" className="file-input file-input-bordered file-input-xs w-full max-w-xs mr-3" /> */}
               <div className="relative">
-        <MusicNoteIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 " />
+        <MusicNoteIcon className="absolute left-2 transform  " />
         <input
           type="file"
           onChange={loadMusic}
@@ -101,14 +101,14 @@ export const EditBook = () => {
               {/* <label className="text-lg">Image</label>
               <input onChange={loadImage} type="file" className="file-input file-input-bordered file-input-xs w-full max-w-xs" /> */}
               <div className="relative w-full max-w-xs">
-        <ImageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 " />
+        <ImageIcon className="absolute left-2 transform " />
         <input
           type="file"
           onChange={loadImage}
           className="file-input file-input-bordered file-input-xs w-full pl-10"
         />
       </div>
-              {preview && <img src={preview} alt="preview" className="w-20 h-20" />}
+              {preview && <img src={preview} alt="preview" className="w-20 h-full" />}
             </div>
             <div className="flex justify-center mt-8">
               <button className="border-2 border-hijauCustom justify-self-center font-bold hover hover:border-hijauCustom hover:text-white-A700 hover:bg-hijauCustom rounded-lg p-2" type="submit">

@@ -69,7 +69,7 @@ export const EditPages = () => {
     </Link>
 </div>
       <div className=" self-center ">
-        <div className="bg-custom border-2 border-neutral-400 h-55vh w-35vw self-center p-8 rounded-3xl md:justify-center my-14 shadow-2xl">
+        <div className="bg-custom border-2 border-neutral-400  w-35vw self-center p-8 rounded-3xl md:justify-center my-14 shadow-2xl">
           <p className=" bg-red-900">{msg}</p>
           <form onSubmit={updatePage}>
             <textarea value={storytext} onChange={(e) => setStorytext(e.target.value)} className="textarea textarea-bordered w-full mb-6 h-44" placeholder="Summary"></textarea>
@@ -78,7 +78,7 @@ export const EditPages = () => {
               {/* <input onChange={loadImage} type="file" className="file-input file-input-bordered file-input-xs w-full max-w-xs" /> */}
              
               <div className="relative w-full max-w-xs">
-    <ImageIcon className="absolute left-2 top-[25%] transform -translate-y-1/2" />
+    <ImageIcon className="absolute left-2  transform " />
     <input
         type="file"
         onChange={loadImage}
@@ -86,7 +86,7 @@ export const EditPages = () => {
     />
 </div>
 
-              {preview && <img src={preview} alt="preview" className="w-20 h-20" />}
+              {preview && <img src={preview} alt="preview" className="w-20 h-full" />}
             </div>
             <div className="flex justify-center  mt-8">
               
