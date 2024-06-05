@@ -58,14 +58,14 @@ export const Utama = () => {
                 e.currentTarget.style.boxShadow = "0px 0px 8px rgba(0, 0, 0, 0.3)";
               }}
             >
-              <figure className="w-full h-64 overflow-hidden">
+              <figure className=" w-full  overflow-hidden h-80">
                 <img src={`http://localhost:8080/uploads/${book.image}`} alt="" className="object-cover w-full h-full object-top" />
               </figure>
-              <div className="card-body h-64 bg-white-A700">
+              <div className="card-body  bg-white-A700 h-72">
                 {" "}
                 {/* Adjust the height as needed */}
                 <h1 className="text-lg font-bold">{book.title}</h1>
-                <div className="overflow-y-auto max-h-28 ">
+                <div className="max-h-32 overflow-y-auto ">
                   {" "}
                   {/* Set a maximum height and make it scrollable */}
                   <p className="text-sm break-words text-wrap text-justify">{book.summary}</p>
