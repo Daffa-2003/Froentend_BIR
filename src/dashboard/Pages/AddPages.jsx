@@ -89,7 +89,7 @@ export const AddPages = () => {
           </div>
           <div className="grid justify-items-stretch mt-8">
             <button className=" border-2 border-hijauCustom justify-self-center font-bold hover hover:border-hijauCustom hover:text-white-A700 hover:bg-hijauCustom rounded-lg p-2" type="submit">
-              Submit!
+              Submit
             </button>
           </div>
         </form>

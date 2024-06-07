@@ -61,7 +61,7 @@ export const Utama = () => {
               <figure className=" w-full  overflow-hidden h-80">
                 <img src={`http://localhost:8080/uploads/${book.image}`} alt="" className="object-cover w-full h-full object-top" />
               </figure>
-              <div className="card-body  bg-white-A700 h-72">
+              <div className="card-body rounded-3xl bg-white-A700 h-72">
                 {" "}
                 {/* Adjust the height as needed */}
                 <h1 className="text-lg font-bold">{book.title}</h1>

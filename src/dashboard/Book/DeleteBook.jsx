@@ -42,9 +42,9 @@ export const DeleteBook = () => {
         <thead className="bg-green-950 border-b-2 border-neutral-400">
           <tr>
             <th className="border-r title border-neutral-400 p-4 text-custom text-lg">No</th>
-            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">bookID</th>
-            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">title</th>
-            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">summary</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">BookID</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">Title</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">Summary</th>
             <th className="border-r title border-neutral-400 p-4 text-custom text-lg">Actions</th>
           </tr>
         </thead>

@@ -46,9 +46,9 @@ export const DeletePages = () => {
         <thead className="bg-green-950  border-b-2 border-neutral-400">
           <tr className="">
             <th className="border-r title border-neutral-400 p-4 text-custom text-lg">No</th>
-            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">pageID</th>
-            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">relatedBookId</th>
-            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">storytext</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">PageID</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">RelatedBookId</th>
+            <th className="border-r title border-neutral-400 p-4 text-custom text-lg">StoryText</th>
             <th className=" border-r title border-neutral-400 p-4 text-custom text-lg">Actions</th>
           </tr>
         </thead>
